@@ -1,0 +1,491 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siddhantrai.com</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #080c18;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.navbar h2 {
+    font-size: 26px;
+}
+
+.navbar h2 span {
+    color: #6c8cff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6c8cff;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.profile-container {
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #6c8cff;
+    box-shadow: 0 0 40px rgba(108, 140, 255, 0.3);
+}
+
+.small-text {
+    color: #9fa9c5;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #6c8cff;
+    font-size: 24px;
+}
+
+.description {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #b8bfd1;
+    line-height: 1.7;
+}
+
+
+/* SOCIAL LINKS */
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #34405f;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #6c8cff;
+    border-color: #6c8cff;
+    transform: translateY(-3px);
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+/* ABOUT */
+
+.about-card {
+    max-width: 700px;
+    margin: auto;
+    background: #11182b;
+    padding: 30px;
+    border-radius: 15px;
+    color: #b8bfd1;
+    line-height: 1.8;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #11182b;
+    padding: 15px 22px;
+    border-radius: 10px;
+    border: 1px solid #263250;
+}
+
+
+/* CONTACT */
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #11182b;
+    color: white;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6c8cff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#response {
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #080c18;
+    color: #8d96ad;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .profile-img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant Rai | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    
+    
+    <nav class="navbar">
+        <h2>Siddhant<span>.</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Siddhant Rai" class="profile-img">
+        </div>
+
+        <p class="small-text">Hello, I'm</p>
+
+        <h1>Siddhant Rai</h1>
+
+        <h2>Computer Science & Engineering Student</h2>
+
+        <p class="description">
+            I'm a 2nd-year CSE student at Oriental,
+            passionate about programming, web development
+            and problem solving.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://linkedin.com/" target="_blank">
+                LinkedIn
+            </a>
+
+           <a href="https://github.com/siddhantrai3054-cmd" target="_blank">
+    GitHub
+</a>
+            
+            </a>
+            <a href="https://www.instagram.com/siddhant__rai____/" target="_blank">
+    Instagram
+</a>
+
+            <a href="https://leetcode.com/" target="_blank">
+                LeetCode
+            </a>
+
+        </div>
+
+    </div>
+    <section id="contact" class="section">
+
+    <h2>Contact Me</h2>
+
+    <p style="margin-bottom: 20px;">
+        📞 <a href="tel:+91XXXXXXXXXX" style="color:#6c8cff;">
+            +91 9244845690
+        </a>
+    </p>
+
+    <form id="contactForm">
+        ...
+    </form>
+
+    <p id="response"></p>
+    <p style="margin-bottom: 20px;">
+    💬
+    <a 
+        href="https://wa.me/9244845690"
+        target="_blank"
+        style="color:#6c8cff; text-decoration:none;"
+    >
+        WhatsApp Me 
+    </a>
+</p>
+
+</section>
+
+</section>
+
+
+<section id="about" class="section">
+
+    <h2>About Me</h2>
+
+    <div class="about-card">
+
+        <p>
+            I am currently pursuing my 2nd year of
+            Computer Science & Engineering at Oriental.
+
+            I enjoy learning new technologies, solving
+            coding problems and building web projects.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="skills" class="section">
+
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Data Structures</div>
+        <div class="skill">Algorithms</div>
+        <div class="skill">Git & GitHub</div>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="response"></p>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Siddhant Rai | CSE Student</p>
+</footer>
+
+<script >const form = document.getElementById("contactForm");
+const response = document.getElementById("response");
+
+form.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    try {
+
+        const res = await fetch("http://localhost:5000/api/contact", {
+
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                name,
+                email,
+                message
+            })
+
+        });
+
+        const data = await res.json();
+
+        response.textContent = data.message;
+
+        form.reset();
+
+    } catch (error) {
+
+        response.textContent =
+            "Server se connect nahi ho pa raha.";
+
+        console.error(error);
+    }
+
+});</script>
+
+</body>
+</html>
+</body>
+</html>
