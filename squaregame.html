@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .siddu{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+       
+    .rect{
+        display: flex;
+    }
+    #main{
+         height: 100%;
+            width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="box">
+            <div class="rect">
+        <div id="sq1" class="siddu"> <h1>1</h1></div>
+        <div id="sq2" class="siddu"> <h1>2</h1></div>
+         </div>
+         <div class="rect">
+        <div id="sq3" class="siddu"> <h1>3</h1></div>
+        <div id="sq4" class="siddu"> <h1>4</h1></div>
+        </div>
+    </div>
+    </div>
+   
+    
+</body>
+<script>
+    let s1 = document.getElementById("sq1");
+    s1.addEventListener("mouseenter" ,function(){
+        let r = Math.floor(Math.random()*1000);
+        s1.innerHTML = `<h1>${r}</h1>`;
+
+    })
+   s1.addEventListener("mouseleave", function(){
+    s1.innerHTML = `<h1>1</h1>`
+   })
+   let s2 = document.getElementById("sq2");
+    s2.addEventListener("mouseenter" ,function(){
+        let r = Math.floor(Math.random()*1000);
+        s2.innerHTML = `<h1>${r}</h1>`;
+
+    })
+   s2.addEventListener("mouseleave", function(){
+    s2.innerHTML = `<h1>2</h1>`
+   })
+ let s3 = document.getElementById("sq3");
+    s3.addEventListener("mouseenter" ,function(){
+        let r = Math.floor(Math.random()*1000);
+        s3.innerHTML = `<h1>${r}</h1>`;
+
+    })
+   s3.addEventListener("mouseleave", function(){
+    s3.innerHTML = `<h1>3</h1>`
+   })
+   let s4 = document.getElementById("sq4");
+    s4.addEventListener("mouseenter" ,function(){
+        let r = Math.floor(Math.random()*1000);
+        s4.innerHTML = `<h1>${r}</h1>`;
+
+    })
+   s4.addEventListener("mouseleave", function(){
+    s4.innerHTML = `<h1>4</h1>`
+   })
+
+   let a1 = document.getElementById("sq1");
+   a1.addEventListener("mouseenter", function(){
+     let r1 = Math.floor(Math.random()*256);
+      let r2 = Math.floor(Math.random()*256);
+       let r3 = Math.floor(Math.random()*256);
+    a1.style.backgroundColor = `rgb(${r1+3},${r2+4},${r3})`;
+   })
+   a1.addEventListener("mouseleave",function(){
+    a1.style.backgroundColor = "white";
+   })
+     let a2 = document.getElementById("sq2");
+   a2.addEventListener("mouseenter", function(){
+     let r1 = Math.floor(Math.random()*256);
+      let r2 = Math.floor(Math.random()*256);
+       let r3 = Math.floor(Math.random()*256);
+    a2.style.backgroundColor = `rgb(${r1+35},${r2+40},${r3})`;
+   })
+   a2.addEventListener("mouseleave",function(){
+    a2.style.backgroundColor = "white";
+   })
+     let a3 = document.getElementById("sq3");
+   a3.addEventListener("mouseenter", function(){
+     let r1 = Math.floor(Math.random()*256);
+      let r2 = Math.floor(Math.random()*256);
+       let r3 = Math.floor(Math.random()*256);
+    a3.style.backgroundColor = `rgb(${r1+3},${r2+4},${r3})`;
+   })
+   a3.addEventListener("mouseleave",function(){
+    a3.style.backgroundColor = "white";
+   })
+
+   s4.addEventListener("mouseenter",function(){
+     let r1 = Math.floor(Math.random()*256);
+      let r2 = Math.floor(Math.random()*256);
+       let r3 = Math.floor(Math.random()*256);
+      
+        s1.style.background = `rgb(${r2},${r1},${r3})`
+         s2.style.background = `rgb(${r3},${r2},${r1})`
+          s3.style.background = `rgb(${r3},${r1},${r3})`
+   })
+     
+</script>
+</html>

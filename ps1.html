@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    border-color: black;
+    margin: 10px;
+   }
+   .circle{
+    height : 100px;
+    width : 100px;
+    margin: 10px;
+    border-radius: 50%;
+   }
+</style>
+  </head>
+  <body>
+    <input type="text" />
+    <button>Add</button>
+
+    <input id="color" type="color" />
+    <select name="" id="">
+    <select name="" id="shape">
+      <option value="square">Square</option>
+      <option value="circle">Circle</option>
+    </select>
+    <button>Add</button>
+    <div class="boxContainer">
+      <!-- <div class="square"></div>
+      <div class="square"></div> -->
+      <div class="circle"></div> -->
+    </div>
+  </body>
+  <script>
+    // console.dir(buttonTag)
+    //console.dir(container);
+    const inputTag = document.querySelector("input");  //isme humne input tag ko select kiya hai jisse hum input tag me operation kr sake
+    //console.dir(inputTag);
+    const buttonTag = document.querySelector("button");   // add wali button ko select kiya
+    const container = document.querySelector(".boxContainer");
+    const colorInputTag = document.querySelector(".color");
+    const shapeInput = document.getElementById("shape");
+    //console.dir(colorTag);
+
+    buttonTag.addEventListener("click", function(){
+        container.innerHTML = "";
+        
+        const numberOfBoxes = inputTag.value;   //isse hum jo boxes values me liye hai usse variable me store krayenge
+// console.log(numberOfBoxes);
+const boxColor = colorInput.value;
+        
+        for(let i = 1; i<= numberOfBoxes; i++){   // loop ke andar boxEle add kiya jisse bar bar box element add ho sake.......
+            const boxEle = document.createElement("div");  // humne ek element bnaya jisse hum div class js me bna sake
+
+        boxEle.classList.add("square"); // element ko upar wale class se connect kiya html wale se
+        boxEle.classList.add(shape);
+          boxEle.style.backgroundColor = boxColor;
+            container.appendChild(boxEle); // boxEle me container me daal diya
+
+        }
+
+        
+        
+    });
+</script>
+</html>
